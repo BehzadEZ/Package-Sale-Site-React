@@ -13,36 +13,11 @@ import Cart from './pages/Cart';
 import { CartProvider } from "./context/CartContext";
 import AboutUs from './pages/AboutUs';
 import { RefProvider } from './context/refContext';
-// import fetchProducts from './firebase/fetchProducts'; // این خط مربوط به فایر استور را کامنت کردیم
 import products from './data/Products'; // استفاده از داده‌های JSON
 import Profile from './pages/Profile';
 
 function App() {
   const [loginStatus] = useState(true);
-  // const [fetchedProducts, setFetchedProducts] = useState([]); // مربوط به داده‌های فایر استور
-  // const [isLoading, setIsLoading] = useState(false); // وضعیت لودینگ را به false تغییر دادیم
-  // const [error, setError] = useState(null);
-
-  /* 
-  useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        const productsFromFirestore = await fetchProducts();
-        const combinedProducts = productsFromFirestore.map((product, index) => ({
-          ...product,
-          imageUrl: productImages[index]?.imageUrl || "" // اضافه کردن تصویر مربوط به محصول
-        }));
-        setFetchedProducts(combinedProducts); // ذخیره در fetchedProducts
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Failed to load products:", error);
-        setError("Failed to load products.");
-        setIsLoading(false);
-      }
-    };
-    loadProducts();
-  }, []);
-  */
 
   return (
     <div className='App'>

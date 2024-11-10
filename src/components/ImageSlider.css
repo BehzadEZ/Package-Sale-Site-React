@@ -13,9 +13,9 @@
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.6); /* پس زمینه تیره برای خواناتر شدن متن */
-  padding: 15px 20px; /* حاشیه بیشتر برای نمایش بهتر */
-  border-radius: 10px; /* لبه‌های گرد */
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 15px 20px; 
+  border-radius: 10px; 
   animation: fadeIn 1s ease; /* افکت نمایشی نرم برای متن */
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-/* استایل ویژه برای تصاویر تمام‌صفحه */
+
 .img-wh {
   width: 100%;
   height: 800px;
@@ -37,13 +37,13 @@
 
 .img-wh:hover {
   transform: scale(1.02); /* بزرگ‌تر شدن تصویر هنگام هاور */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* سایه قوی‌تر هنگام هاور */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
-  background: rgba(255, 255, 255, 0.3); /* تغییر رنگ هنگام هاور */
+  background: rgba(255, 255, 255, 0.3); 
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -52,12 +52,12 @@
   font-weight: bold;
 }
 
-/* افکت‌های متنی جذاب‌تر */
+
 .carousel-caption h3 {
   font-size: 2rem;
   font-weight: bold;
   color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* افکت سایه برای متن */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .carousel-caption p {

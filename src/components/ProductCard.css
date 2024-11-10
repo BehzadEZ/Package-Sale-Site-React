@@ -10,8 +10,8 @@
   cursor: pointer;
   color: white;
   transform: translateY(-10px); /* حرکت کارت به سمت بالا */
-  box-shadow: 0px 13px 30px 0px rgba(0, 94, 255, 0.808); /* سایه زیبا */
-  background: linear-gradient(135deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1)); /* پس زمینه گرادیانت در زمان hover */
+  box-shadow: 0px 13px 30px 0px rgba(0, 94, 255, 0.808); 
+  background: linear-gradient(135deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1)); 
 }
 
 .img {
@@ -68,8 +68,8 @@
 
 .text .h3 {
   font-family: system-ui;
-  font-size: 18px; /* افزایش سایز فونت */
-  font-weight: 700; /* بولدتر شدن */
+  font-size: 18px; 
+  font-weight: 700; 
   color: black;
   text-align: center;
 }
@@ -112,11 +112,11 @@
 
 .cart-button {
   color: #fff;
-  background-color: #8d22ff; /* تغییر رنگ دکمه در هوور */
+  background-color: #8d22ff;
 }
 .cart-button:hover {
   color: #fff;
-  background-color: rgba(255, 215, 0, 0.2); /* رنگ پس‌زمینه در حالت هاور */
+  background-color: rgba(255, 215, 0, 0.2); 
   border: 2px solid #ffd700;
 }
 
@@ -134,7 +134,7 @@
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  background-color: #e90000; /* رنگ قرمز برای حذف از سبد */
+  background-color: #e90000; 
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -142,11 +142,11 @@
   transition: color 0.3s, background 0.3s, transform 0.3s;
 }
 .remove-bg {
-  background-color: #6b0009; /* رنگ جدید برای حالت "Remove From Cart" */
+  background-color: #6b0009; 
 }
 
 .remove-cart-button:hover {
-  background-color: #e60000; /* تغییر رنگ به قرمز تیره در هوور */
+  background-color: #e60000; 
   transform: scale(1.05); /* افکت زوم در زمان هوور */
 }
 

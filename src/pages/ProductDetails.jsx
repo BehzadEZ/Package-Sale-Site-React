@@ -2,7 +2,6 @@ import "./ProductDetails.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
-// import { doc, getDoc } from "firebase/firestore"; // کامنت کردن فایر استور
 import {
   FaCalendar,
   FaChalkboardTeacher,
@@ -11,7 +10,6 @@ import {
 } from "react-icons/fa";
 import FAQ from "../components/faq";
 import Comments from "../components/comments";
-// import db from "../firebase/firebaseConfig"; // کامنت کردن فایر استور
 import products from "../data/Products";
 
 const ProductDetails = ({ loginStatus , productImages }) => {
@@ -21,29 +19,6 @@ const ProductDetails = ({ loginStatus , productImages }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // const fetchProduct = async () => {
-    //   try {
-    //     const productRef = doc(db, "package", id);
-    //     const docSnap = await getDoc(productRef);
-    //     if (docSnap.exists()) {
-    //       const fetchedProduct = { id: docSnap.id, ...docSnap.data() };
-    //       const localProduct = products.find((item) => item.id === parseInt(id));
-    //       if (localProduct) {
-    //         fetchedProduct.imageUrl = localProduct.imageUrl;
-    //       } else {
-    //         console.log("Local product not found");
-    //       }
-    //       setProduct(fetchedProduct);
-    //     } else {
-    //       console.log("Product not found in Firestore");
-    //     }
-    //   } catch (error) {
-    //     console.error("Error fetching product: ", error);
-    //   }
-    // };
-    // fetchProduct();
-
-    // استفاده از داده‌های محلی
     const localProduct = products.find((item) => item.id === parseInt(id));
     if (localProduct) {
       setProduct(localProduct);
@@ -68,7 +43,6 @@ const ProductDetails = ({ loginStatus , productImages }) => {
     }
   };
 
-  console.log("Product Details:", product);  // اضافه کردن برای دیباگ
 
   return (
     <>

@@ -3,8 +3,8 @@
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center; /* هم‌ترازی فرم و تصویر */
-    gap: 20px; /* فاصله بین فرم و تصویر */
+    align-items: center; 
+    gap: 20px; 
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -91,8 +91,8 @@
 }
 
 .svgStyle {
-    height: 250px; /* اندازه‌ی متناسب برای تصویر */
-    flex-shrink: 0; /* جلوگیری از کشیدگی تصویر */
+    height: 250px; 
+    flex-shrink: 0;
     opacity: 0.8;
     animation: float 3s ease-in-out infinite;
 }

@@ -1,7 +1,7 @@
 // src/components/ProductsListInfo.jsx
 import ProductCard from '../components/ProductCard';
 import './ProductsListInfo.css';
-import products from '../data/Products'; // وارد کردن داده‌های JSON محلی
+import products from '../data/Products'; 
 
 const ProductsListInfo = ({ loginStatus }) => {
   return (
@@ -14,7 +14,7 @@ const ProductsListInfo = ({ loginStatus }) => {
           price={product.price}
           teacher={product.teacher}
           imageUrl={product.imageUrl}
-          loginStatus={loginStatus} // اضافه کردن loginStatus
+          loginStatus={loginStatus} 
         />
       ))}
     </div>

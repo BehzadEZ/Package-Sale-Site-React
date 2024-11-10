@@ -1,6 +1,6 @@
 // src/components/ImageSlider.jsx
 import Carousel from 'react-bootstrap/Carousel';
-import './ImageSlider.css'; // فایل استایل سفارشی (اختیاری)
+import './ImageSlider.css'; 
 
 function ImageSlider() {
   return (

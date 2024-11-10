@@ -15,8 +15,8 @@
     border-radius: 20px;
     border: 2px solid var(--main-color);
     box-shadow: 4px 4px var(--main-color);
-    max-width: 500px; /* حداکثر عرض */
-    margin: 50px auto; /* فاصله از بالا و پایین */
+    max-width: 500px; 
+    margin: 50px auto; 
 }
   
   .title {
