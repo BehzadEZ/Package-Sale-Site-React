@@ -1,0 +1,162 @@
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 200px;
+   
+}
+
+.cart-details {
+    width: 35%;
+    background: #1d021b; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* سایه برای برجسته‌تر شدن */
+}
+
+.cart-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #e100ff; /* رنگ متن با تضاد بیشتر */
+}
+
+.cart-payment-info label {
+    display: block;
+    margin-bottom: 8px;
+    color: #9c9c9c; /* ملایم‌تر کردن رنگ */
+}
+
+.cart-discount-code {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart-discount-code input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #2575fc; /* تغییر رنگ بوردر به رنگ متضاد */
+    background: #2c0028; /* رنگ پس‌زمینه تیره‌تر */
+    color: #fff;
+}
+
+.apply-discount-btn {
+    width: 25%;
+    padding: 8px;
+    border-radius: 4px;
+    background: #e100ff; 
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.apply-discount-btn:hover {
+    background: rgba(255, 215, 0, 0.2);; 
+    border:3px solid #ffd700; /* تغییر به رنگ آبی برای تضاد */
+    transform: scale(1.05); /* کمی بزرگ شدن در حالت هاور */
+}
+
+.cart-summary {
+    margin-bottom: 20px;
+}
+
+.cart-summary-item, .cart-summary-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #2575fc; /* تغییر رنگ بوردر */
+}
+
+.cart-summary-total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e100ff; /* استفاده از رنگ برجسته‌تر */
+}
+
+.complete-purchase-btn {
+    width: 100%;
+    padding: 10px;
+    background: #6a11cb; 
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.complete-purchase-btn:hover {
+    background: rgba(255, 215, 0, 0.2);; 
+    border:3px solid #ffd700;
+    transform: scale(1.05); /* اضافه شدن افکت */
+}
+
+.cart-items {
+    width: 60%;
+    background: #1d021b; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #2c0028; /* کمی تیره‌تر برای برجسته‌سازی */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.cart-item-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 2px solid #2575fc; /* اضافه کردن بوردر برای جلوه بهتر */
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-item-title {
+    font-size: 1rem;
+    color: #e100ff; /* برجسته‌تر کردن عنوان */
+}
+
+.cart-item-price {
+    color: #9c9c9c; 
+    margin: 5px 0;
+}
+
+.cart-item-teacher {
+    color: #6a11cb; 
+    font-size: 0.8rem;
+}
+
+.remove-cart-item {
+    background: none;
+    border: none;
+    color: #e74c3c; 
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.remove-cart-item:hover {
+    color: #c0392b; 
+    transform: scale(1.2); /* افکت بزرگ‌تر شدن برای برجسته‌تر شدن */
+}
+
+.empty-cart-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #9c9c9c; /* ملایم‌تر و متناسب با رنگ‌های جدید */
+}

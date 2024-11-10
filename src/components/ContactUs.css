@@ -1,0 +1,125 @@
+.contact-section {
+    padding: 30px 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* هم‌ترازی فرم و تصویر */
+    gap: 20px; /* فاصله بین فرم و تصویر */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container {
+    margin-right: 500px;
+    max-width: 500px;
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb, #ea49ff);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: scale(1.05);
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    animation: slideDown 0.8s ease-out;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #1d021b;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 10px #ea49ff;
+    outline: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #6a11cb;
+}
+
+.form-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #ea49ff;
+    color: #220505;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    color: #fff;
+    background-color: rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+    transform: scale(1.1);
+}
+
+.svgStyle {
+    height: 250px; /* اندازه‌ی متناسب برای تصویر */
+    flex-shrink: 0; /* جلوگیری از کشیدگی تصویر */
+    opacity: 0.8;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* پنهان کردن تصویر در عرض کمتر از 650px */
+@media (max-width: 650px) {
+    .svgStyle {
+        display: none;
+    }
+    
+.contact-container {
+    margin-right: 0px;
+}
+}
+
+/* تعریف انیمیشن‌ها */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

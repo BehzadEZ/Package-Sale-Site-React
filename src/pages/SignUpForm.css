@@ -1,0 +1,131 @@
+/* src/components/SignUpForm.css */
+.form {
+    --input-focus: #2d8cf0;
+    --font-color: #ffffff;
+    --font-color-sub: #dddddd;
+    --bg-color: #2575fc;
+    --main-color: #6a11cb;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    max-width: 500px; /* حداکثر عرض */
+    margin: 50px auto; /* فاصله از بالا و پایین */
+}
+  
+  .title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .input {
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 2px solid var(--main-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .login-with {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .button-log {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .button-log:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .button-confirm {
+    margin-top: 30px;
+    width: 140px;
+    height: 45px;
+    border-radius: 25px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button-confirm:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* src/components/StyledLink.css */
+.styled-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #7a00b3;
+}
+
+.styled-link:hover {
+  background: linear-gradient(135deg, #fa0606 0%, #7700ff 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  border: 2px solid #ffffff;
+}
+
+.styled-link:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}

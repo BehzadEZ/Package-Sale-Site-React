@@ -1,0 +1,133 @@
+.comments-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #f7f7f7;
+  animation: fadeIn 1s ease-in;
+}
+
+.comments-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #f3d94b;
+}
+
+.comment-box {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comment-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-comment,
+.admin-reply {
+  padding: 15px;
+  position: relative;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.user-comment {
+  background-color: #2a2a2a;
+  border-left: 4px solid #4caf50;
+  color: #a0d995;
+}
+
+.admin-reply {
+  background-color: #333;
+  border-left: 4px solid #d9a512;
+  margin-top: 5px;
+  color: #f3d94b;
+}
+
+.user-comment h4,
+.admin-reply h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.user-comment p,
+.admin-reply p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.user-comment h4 {
+  color: #4caf50;
+}
+
+.admin-reply h4 {
+  color: #d9a512;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-10px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+/* Add-Comment Section */
+.add-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-comment input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: #f0f0f0;
+  background-color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-comment input[type="text"]:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+.add-comment button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-comment button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-comment button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,97 @@
+/* src/pages/ProductList.css */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* نمایش ۴ کارت در هر سطر */
+    gap: 20px; /* فاصله بین کارت‌ها */
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+  }
+  
+  @media (max-width: 992px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* نمایش ۲ کارت در دستگاه‌های کوچکتر */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-list {
+      grid-template-columns: 1fr; /* نمایش ۱ کارت در دستگاه‌های بسیار کوچک */
+    }
+  }
+
+  .btn-more-products {
+    position: relative;
+    top: -150px;
+    left: 32%;
+    outline: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    height: 65px;
+    border-radius: 0.5em;
+    background: linear-gradient(90deg, #2f82ff, #1c0436, #fffb00);
+    background-size: 200%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-more-products:hover {
+    background-position: right;
+    box-shadow: 0 10px 20px rgba(23, 1, 46, 0.651);
+    transform: scale(1.05);
+  }
+  
+  .btn-more-products div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .btn-more-products div span {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .btn-more-products div:nth-child(1) {
+    transform: translateY(0);
+  }
+  
+  .btn-more-products div:nth-child(2) {
+    transform: translateY(100%);
+  }
+  
+  .btn-more-products:hover div:nth-child(1) {
+    transform: translateY(-100%);
+  }
+  
+  .btn-more-products:hover div:nth-child(2) {
+    transform: translateY(0);
+  }
+  
+  .btn-more-products p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .btn-more-products:active {
+    transform: scale(0.95);
+  }
+  
+  

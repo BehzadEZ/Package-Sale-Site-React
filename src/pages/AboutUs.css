@@ -1,0 +1,134 @@
+/* AboutUs.css */
+.about-us-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.about-us-background {
+    position: relative;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1d021b, #6a11cb, #ea49ff);
+    user-select: none;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(35%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.about-us-overlay {
+    text-align: center;
+    font-weight: bold;
+    color: #ea49ff;
+    z-index: 10;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+.about-us-overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffffb3;
+    transition: transform 0.3s;
+}
+
+.about-us-overlay h2 {
+    font-size: 5.5rem;
+    color: #ffffff;
+    margin-top: 0.2em;
+    transition: transform 0.3s;
+}
+
+.about-us-overlay h1:hover, .about-us-overlay h2:hover {
+    transform: scale(1.1);
+}
+
+.scroll-arrow {
+    height: 200px;
+    position: relative;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 2px 2px 10px rgba(234, 73, 255, 0.5), 0 0 20px rgba(234, 73, 255, 0.5);
+        color: #ea49ff;
+    }
+    100% {
+        text-shadow: 2px 2px 20px rgba(234, 73, 255, 1), 0 0 30px rgba(234, 73, 255, 1);
+        color: #ff3a9d;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about-us-content {
+    background-color: #1d021b;
+    color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+    animation: contentFadeIn 1.5s ease forwards;
+    opacity: 0;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes contentFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about-us-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ea49ff;
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.about-us-content p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #eaeaea;
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

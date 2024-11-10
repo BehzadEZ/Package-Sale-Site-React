@@ -1,0 +1,112 @@
+/* src/components/Footer.css */
+.footer {
+  background: transparent;
+  color: #fff;
+  padding: 10px 0; /* کاهش padding */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 1em; /* کاهش اندازه فونت */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-section {
+  padding: 15px;
+  max-width: 280px; /* کاهش عرض */
+}
+
+.footer-title {
+  font-size: 1.4em; /* تغییر اندازه فونت عنوان */
+  font-weight: 600; /* کاهش وزن */
+  margin-bottom: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+.footer-text {
+  font-size: 0.9em; /* کاهش اندازه فونت */
+  line-height: 1.5;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5em; /* تغییر اندازه آیکون‌ها */
+}
+
+.social-icons a {
+  color: #ddd;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: rotate(5deg) scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8em; /* کاهش اندازه فونت */
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+}
+
+/* src/components/Footer.css */
+
+/* برای لینک‌ها که به عنوان دکمه‌ها استفاده می‌شوند */
+.footer-links a {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block; /* برای استفاده از padding */
+  padding: 8px 15px; /* اضافه کردن padding برای دکمه‌ها */
+  background-color: transparent; /* پس‌زمینه شفاف */
+  color: #ddd; /* رنگ متن */
+  text-decoration: none; /* حذف زیرخط */
+  border: 2px solid transparent; /* مرز شفاف به اندازه دکمه */
+  border-radius: 5px; /* گوشه‌های گرد */
+  transition: all 0.3s ease; /* انیمیشن نرم برای تغییرات */
+}
+
+.footer-links a:hover {
+  color: #fff; /* رنگ متن در حالت هاور */
+  background-color: rgba(255, 215, 0, 0.2); /* رنگ پس‌زمینه در حالت هاور */
+  border: 2px solid #ffd700; /* مرز در حالت هاور */
+  transform: translateY(-3px); /* حرکت دکمه به سمت بالا */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* سایه زیبا در حالت هاور */
+}
+.footer-bottom a {
+  color: #66ff00;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: underline;
+}

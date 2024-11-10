@@ -1,0 +1,121 @@
+.navbar {
+  background: linear-gradient(45deg, #1d021b, #6a11cb);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  color: #ea49ff !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffd700 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+  color: #ddd;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 215, 0, 0.2);
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .btn-primary {
+  background-color: #ffd700;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .btn-primary:hover {
+  background-color: #ffb400;
+  color: #000;
+}
+
+.nav-item {
+  padding-right: 30px;
+}
+
+.SignUpRegister {
+  background-color: #190033;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.SignUpRegister:hover {
+  background-color: #ffd700;
+  color: #1d021b;
+  transform: scale(1.05);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #1d021b;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-profile:hover {
+  background-color: #ffd700;
+  color: #1d021b;
+  transform: scale(1.05);
+}
+
+.user-icon {
+  font-size: 24px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-icon {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  width: 50px; /* عرض ثابت برای جلوگیری از حرکت */
+  text-align: center; /* قرارگیری آیکون در وسط */
+  padding: 0 10px; /* فاصله ثابت */
+}
+
+.cart-icon-size {
+  font-size: 2rem;
+}
+
+.cart-icon:hover {
+  color: #ffce00;
+  box-shadow: 0 4px 15px rgba(255, 206, 0, 0.5);
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

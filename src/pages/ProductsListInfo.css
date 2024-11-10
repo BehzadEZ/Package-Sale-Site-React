@@ -1,0 +1,20 @@
+/* src/pages/ProductList.css */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* نمایش ۴ کارت در هر سطر */
+    gap: 20px; /* فاصله بین کارت‌ها */
+    padding: 40px;
+  }
+  
+  @media (max-width: 992px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* نمایش ۲ کارت در دستگاه‌های کوچکتر */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-list {
+      grid-template-columns: 1fr; /* نمایش ۱ کارت در دستگاه‌های بسیار کوچک */
+    }
+  }
+  

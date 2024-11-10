@@ -1,0 +1,67 @@
+/* src/components/ImageSlider.css */
+.carousel-item img {
+  max-height: 600px; /* کنترل ارتفاع تصاویر */
+  object-fit: cover;
+ 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* افکت سایه برای تصاویر */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* افکت برای حرکت نرم */
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05); /* بزرگ‌نمایی تصویر هنگام هاور */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* افزایش سایه هنگام هاور */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* پس زمینه تیره برای خواناتر شدن متن */
+  padding: 15px 20px; /* حاشیه بیشتر برای نمایش بهتر */
+  border-radius: 10px; /* لبه‌های گرد */
+  animation: fadeIn 1s ease; /* افکت نمایشی نرم برای متن */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* استایل ویژه برای تصاویر تمام‌صفحه */
+.img-wh {
+  width: 100%;
+  height: 800px;
+  transition: all 0.5s ease;
+}
+
+.img-wh:hover {
+  transform: scale(1.02); /* بزرگ‌تر شدن تصویر هنگام هاور */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* سایه قوی‌تر هنگام هاور */
+}
+
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.3); /* تغییر رنگ هنگام هاور */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  border-radius: 50%;
+  padding: 30px;
+  font-weight: bold;
+}
+
+/* افکت‌های متنی جذاب‌تر */
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* افکت سایه برای متن */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
